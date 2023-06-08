@@ -17,7 +17,7 @@ namespace FirstWebApp.Controllers
         {
             return View();
         }
-
+        public IActionResult MyError() { return View("Error"); }
         public IActionResult Privacy()
         {
             return View();

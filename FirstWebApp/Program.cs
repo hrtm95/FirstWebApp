@@ -23,5 +23,9 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
+    name: "Error Page",
+    defaults: new { controller = "Home", action = "Error" },
+    pattern: "/Error");
 
 app.Run();
